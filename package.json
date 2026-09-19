@@ -1,0 +1,17 @@
+{
+  "name": "lld-practice-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A focused practice platform for Low-Level Design (LLD)",
+  "scripts": {
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "test": "npm run test --prefix server",
+    "seed": "npm run seed --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
